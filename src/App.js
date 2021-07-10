@@ -1,12 +1,10 @@
+import React from 'react';
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-
-        <p>
-          hello world
-        </p>
-
+        <p>hello world</p>
       </header>
     </div>
   );
