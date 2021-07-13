@@ -6,14 +6,14 @@ const Categories = props => {
   const [mainCategories, setMainCategories] = useState([]);
   const { closeHover } = props;
 
-  useEffect(() => {
-    fetch('/data/categories.json')
-      .then(res => res.json())
-      .then(list => {
-        setCategoriesList(list.CATEGORIES);
-      })
-      .catch(err => console.log(err));
-  }, []);
+  // useEffect(() => {
+  //   fetch('/data/categories.json')
+  //     .then(res => res.json())
+  //     .then(list => {
+  //       setCategoriesList(list.CATEGORIES);
+  //     })
+  //     .catch(err => console.log(err));
+  // }, []);
 
   // Promise.all([]);
 
@@ -58,10 +58,10 @@ const Categories = props => {
           })}
         </div>
         <div className="mainCategoriesBox">
-          {mainCategories.map(title => {
+          {mainCategories.map(main => {
             return (
-              <div key={title.id} className="mainTitle">
-                {title.category}
+              <div key={main.id} className="mainTitle">
+                {main.category}
               </div>
             );
           })}

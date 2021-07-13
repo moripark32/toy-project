@@ -23,8 +23,6 @@ const DropBar = () => {
       <div className="dropBar">
         <ul>
           <li onMouseEnter={openHover}>탐색</li>
-          {/* <li>탐색</li> */}
-          {/* onMouseEnter:영역에 들어갔을때 마우스포인터가 실행 */}
           <li onMouseEnter={closeHover}>커리어 성장</li>
           <li onMouseEnter={closeHover}>직군별 연봉</li>
           <li onMouseEnter={closeHover}>이력서</li>
