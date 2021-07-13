@@ -18,10 +18,6 @@
     }
   }
 
-  // .mainOnly {
-  //   display: flex;
-  // } 어딧는지몰라
-
   .mask {
     overflow-y: hidden;
     animation: mask-slide 2s;
@@ -42,13 +38,13 @@
   100% {
     opacity: 1;
   }
-  // 그냥 트랜지션을 하면 시작점만 줄수밖에 없다
 }
+
 @keyframes mask-slide {
   0% {
     height: 100px;
   }
   100% {
-    height: 200px;
+    height: 150px;
   }
 }
