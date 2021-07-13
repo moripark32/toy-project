@@ -2,11 +2,23 @@
   "CATEGORIES": [
     {
       "id": 1,
-      "category": "영업"
+      "category": "소리"
     },
     {
       "id": 2,
-      "category": "영업"
+      "category": "소리"
+    },
+    {
+      "id": 3,
+      "category": "소리"
+    },
+    {
+      "id": 4,
+      "category": "소리"
+    },
+    {
+      "id": 5,
+      "category": "소리"
     }
   ]
 }

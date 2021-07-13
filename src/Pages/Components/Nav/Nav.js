@@ -1,8 +1,9 @@
 import React from 'react';
+import '../Nav/Nav.scss';
 import DropBar from './Components/DropBar';
 const Nav = () => {
   return (
-    <div>
+    <div className="navigation">
       <DropBar />
     </div>
   );
