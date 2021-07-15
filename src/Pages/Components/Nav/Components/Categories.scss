@@ -1,18 +1,53 @@
+@media (max-width: 767px) {
+  .categories {
+    display: none;
+  }
+}
+
 .categories {
-  font-size: 5px;
+  // font-size: 5px;
 
   .mainCategory {
     display: inline-flex;
-    // opacity: 0.2;
-    // transition: opacity 0.4s;
     animation: fade-in 2s;
+    // font-size: 4px;
+    // padding: 0;
+    // margin: 0;
+    cursor: pointer;
+    width: 20%;
+
+    ul {
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .maca {
+      border: 1px solid red;
+      // width: 50px;
+      // width: 75px;
+      list-style: none;
+      .inbet {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .masubca {
+      border: 1px solid blue;
+    }
+    .subca {
+      border: 1px solid green;
+    }
+  }
+
+  .categoriesBox {
+    width: 83.3%;
   }
 
   .mainCategoriesBox {
     background-color: lightblue;
     display: inline-block;
-    margin-left: 100px;
-
+    // margin-left: 50px;
+    width: 16.6%;
     .mainTitle {
       margin-bottom: 5px;
     }
@@ -28,6 +63,8 @@
     display: flex;
     justify-content: left;
     align-items: baseline;
+    // width: 100%;
+    // padding: 0 30px;
   }
 }
 

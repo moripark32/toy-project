@@ -1,15 +1,46 @@
-.dropBar {
-  ul {
-    justify-content: center;
+@media (min-width: 768px) {
+  .dropBar ul {
+    // justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    display: flex;
     list-style: none;
+    // width: 300px;
+    // font-size: 5px;
+    border: 1px solid red;
+    margin: 0 auto;
+    padding: 0;
+
+    li:first-child {
+      display: none;
+    }
+
     li {
-      padding: 10px;
       cursor: pointer;
       &:hover {
         border-bottom: 1px solid blue;
       }
     }
   }
+}
+
+@media (max-width: 767px) {
+  .dropBar ul {
+    li {
+      display: none;
+    }
+
+    li:first-child,
+    li:nth-child(2),
+    li:nth-child(3) {
+      display: block;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+  }
+}
+
+.dropBar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
 }

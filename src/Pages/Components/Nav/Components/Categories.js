@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Categories.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 const Categories = props => {
   const [categoriesList, setCategoriesList] = useState([]);
@@ -42,15 +44,24 @@ const Categories = props => {
           {categoriesList.map(main => {
             return (
               <div key={main.id} className="mainCategory">
-                <ul>
-                  <li>
-                    {main.category}
-                    <ul>
+                <ul className="flex">
+                  <li className="maca">
+                    <div className="inbet">
+                      {main.category}{' '}
+                      <span>
+                        <FontAwesomeIcon icon={faChevronRight} />
+                      </span>
+                    </div>
+                    <div className="masubca">
                       {main.sub_category &&
                         main.sub_category.map(sub => {
-                          return <li key={sub.id}>{sub.name}</li>;
+                          return (
+                            <div className="subca" key={sub.id}>
+                              {sub.name}
+                            </div>
+                          );
                         })}
-                    </ul>
+                    </div>
                   </li>
                 </ul>
               </div>
