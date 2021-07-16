@@ -41,6 +41,14 @@
 
   .categoriesBox {
     width: 83.3%;
+    .mainCategory {
+      .maca {
+        width: 12rem;
+        .subca {
+          white-space: nowrap;
+        }
+      }
+    }
   }
 
   .mainCategoriesBox {
@@ -82,6 +90,6 @@
     height: 100px;
   }
   100% {
-    height: 150px;
+    height: 240px;
   }
 }

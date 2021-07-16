@@ -11,18 +11,20 @@ const Nav = () => {
   console.log({ setIsHovered });
 
   const openHover = () => {
-    // setIsHovered(true);
+    //setIsHovered(true);
   };
 
   const closeHover = () => {
-    // setIsHovered(false);
+    //setIsHovered(false);
   };
 
   return (
     <div className="navigation">
       <div className="nav-i">
         <div className="nav-i-a">
-          <img src={Logo} className="logo" />
+          <div className="logo">
+            <img src={Logo} />
+          </div>
           <DropBar openHover={openHover} closeHover={closeHover} />
         </div>
         <div className="nav-i-b">

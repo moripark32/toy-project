@@ -1,51 +1,59 @@
 @media (min-width: 768px) {
-  .navigation .nav-i {
-    display: flex;
-    padding: 0 30px;
-
-    .nav-i-a {
-      display: flex;
-      flex: 5;
-
-      > :first-child {
-        flex: 1;
-      }
-
-      > :nth-child(2) {
-        flex: 3;
+  .navigation {
+    .logo {
+      img {
+        margin: 0 auto;
       }
     }
-
-    .nav-i-b {
+    .nav-i {
       display: flex;
-      flex: 2;
+      padding: 0 30px;
+      .nav-i-a {
+        display: flex;
+        flex: 5;
+
+        > :first-child {
+          flex: 1;
+        }
+
+        > :nth-child(2) {
+          flex: 3;
+        }
+      }
+
+      .nav-i-b {
+        display: flex;
+        flex: 2;
+      }
     }
   }
 }
 
 @media (max-width: 767px) {
-  .navigation .nav-i {
-    display: flex;
-    padding: 0 30px;
+  .navigation {
+    .nav-i {
+      display: flex;
+      padding: 0 30px;
 
-    .nav-i-a {
-      // display: flex;
-      flex: 4;
+      .nav-i-a {
+        // display: flex;
+        flex: 4;
 
-      display: block;
+        display: block;
 
-      // > :first-child {
-      //   flex: 1;
-      // }
+        // > :first-child {
+        //   flex: 1;
+        // }
 
-      // > :nth-child(2) {
-      //   flex: 3;
-      // }
-    }
+        // > :nth-child(2) {
+        //   flex: 3;
+        // }
+      }
 
-    .nav-i-b {
-      // display: flex;
-      flex: 2;
+      .nav-i-b {
+        // display: flex;
+        flex: 2;
+      }
     }
   }
 }
@@ -54,9 +62,15 @@
   border: 1px solid black;
 
   .logo {
-    border: 1px solid black;
-    width: 100px;
-    height: 25px;
+    border: 1px solid green;
+    margin: 6px 0;
+    //width: 15px;
+    //height: 30px;
+    img {
+      width: 150px;
+      display: block;
+      border: 1px solid blue;
+    }
   }
 
   .nav-ii {
