@@ -43,9 +43,24 @@
     width: 83.3%;
     .mainCategory {
       .maca {
-        width: 12rem;
+        min-width: 10vw;
         .subca {
-          white-space: nowrap;
+          display: flex;
+          width: 100%;
+          // white-space: nowrap;
+          // // display: -webkit-box;
+          // // -webkit-box-orient: vertical;
+          // // -webkit-line-clamp: 1;
+          // // overflow: hidden;
+          // text-overflow: ellipsis;
+          // white-space: nowrap;
+          // overflow: hidden;
+          font-size: var(--micro);
+          // min-width: 120px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
         }
       }
     }
