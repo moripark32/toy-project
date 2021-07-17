@@ -23,7 +23,10 @@
 
       .nav-i-b {
         display: flex;
-        flex: 2;
+        justify-content: center;
+        align-items: center;
+        display: -ms-inline-grid;
+        display: -moz-inline-grid;
       }
     }
   }
@@ -36,22 +39,11 @@
       padding: 0 30px;
 
       .nav-i-a {
-        // display: flex;
         flex: 4;
-
         display: block;
-
-        // > :first-child {
-        //   flex: 1;
-        // }
-
-        // > :nth-child(2) {
-        //   flex: 3;
-        // }
       }
 
       .nav-i-b {
-        // display: flex;
         flex: 2;
       }
     }
@@ -64,8 +56,6 @@
   .logo {
     border: 1px solid green;
     margin: 6px 0;
-    //width: 15px;
-    //height: 30px;
     img {
       width: 150px;
       display: block;

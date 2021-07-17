@@ -112,13 +112,9 @@
   }
 }
 .categories {
-  // font-size: 5px;
   .mainCategory {
     display: inline-flex;
     animation: fade-in 2s;
-    // font-size: 4px;
-    // padding: 0;
-    // margin: 0;
     cursor: pointer;
     ul {
       margin: 0 auto;
@@ -126,8 +122,6 @@
     }
     .maca {
       border: 1px solid red;
-      // width: 50px;
-      // width: 75px;
       list-style: none;
       .inbet {
         display: flex;
@@ -149,19 +143,13 @@
         .subca {
           display: flex;
           width: 100%;
-          // white-space: nowrap;
-          // // display: -webkit-box;
-          // // -webkit-box-orient: vertical;
-          // // -webkit-line-clamp: 1;
-          // // overflow: hidden;
-          // text-overflow: ellipsis;
-          // white-space: nowrap;
-          // overflow: hidden;
+          white-space: nowrap;
+          // display: -webkit-box;
+          // -webkit-box-orient: vertical;
+          // -webkit-line-clamp: 2;
+          text-overflow: ellipsis;
           font-size: var(--micro);
           // min-width: 120px;
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-          -webkit-line-clamp: 2;
           overflow: hidden;
         }
       }
@@ -170,7 +158,8 @@
   .mainCategoriesBox {
     background-color: lightblue;
     display: inline-block;
-    // margin-left: 50px;
+    white-space: nowrap;
+
     width: 16.6%;
     .mainTitle {
       margin-bottom: 5px;
@@ -185,8 +174,6 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    // width: 100%;
-    // padding: 0 30px;
   }
 }
 @keyframes fade-in {
