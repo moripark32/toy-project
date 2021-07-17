@@ -1,12 +1,118 @@
+// @media (max-width: 767px) {
+//   .categories {
+//     display: none;
+//   }
+// }
+
+// .categories {
+//   // font-size: 5px;
+
+//   .mainCategory {
+//     display: inline-flex;
+//     animation: fade-in 2s;
+//     // font-size: 4px;
+//     // padding: 0;
+//     // margin: 0;
+//     cursor: pointer;
+//     width: 20%;
+
+//     ul {
+//       margin: 0 auto;
+//       padding: 0;
+//       background-color: yellow;
+//     }
+
+//     .maca {
+//       border: 1px solid red;
+//       // width: 50px;
+//       // width: 75px;
+//       list-style: none;
+//     }
+//     .masubca {
+//       border: 1px solid blue;
+//     }
+//     .subca {
+//       border: 1px solid green;
+//     }
+//   }
+
+//   .categoriesBox {
+//     width: 83.3%;
+//     .mainCategory {
+//       .maca {
+//         min-width: 10vw;
+//         .subca {
+//           display: flex;
+//           width: 100%;
+//           // white-space: nowrap;
+//           // // display: -webkit-box;
+//           // // -webkit-box-orient: vertical;
+//           // // -webkit-line-clamp: 1;
+//           // // overflow: hidden;
+//           // text-overflow: ellipsis;
+//           // white-space: nowrap;
+//           // overflow: hidden;
+//           font-size: var(--micro);
+//           // min-width: 120px;
+//           display: -webkit-box;
+//           -webkit-box-orient: vertical;
+//           -webkit-line-clamp: 2;
+//           overflow: hidden;
+//         }
+//       }
+//     }
+//   }
+
+//   .mainCategoriesBox {
+//     background-color: lightblue;
+//     display: inline-block;
+//     // margin-left: 50px;
+//     width: 16.6%;
+//     .mainTitle {
+//       margin-bottom: 5px;
+//     }
+//   }
+
+//   .mask {
+//     overflow-y: hidden;
+//     animation: mask-slide 2s;
+//     animation-fill-mode: forwards;
+//   }
+
+//   .flex {
+//     display: flex;
+//     justify-content: left;
+//     align-items: baseline;
+//     // width: 100%;
+//     // padding: 0 30px;
+//   }
+// }
+
+// @keyframes fade-in {
+//   0% {
+//     opacity: 0.2;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
+// @keyframes mask-slide {
+//   0% {
+//     height: 100px;
+//   }
+//   100% {
+//     height: 240px;
+//   }
+// }
+
 @media (max-width: 767px) {
   .categories {
     display: none;
   }
 }
-
 .categories {
   // font-size: 5px;
-
   .mainCategory {
     display: inline-flex;
     animation: fade-in 2s;
@@ -14,13 +120,10 @@
     // padding: 0;
     // margin: 0;
     cursor: pointer;
-    width: 20%;
-
     ul {
       margin: 0 auto;
       padding: 0;
     }
-
     .maca {
       border: 1px solid red;
       // width: 50px;
@@ -38,12 +141,11 @@
       border: 1px solid green;
     }
   }
-
   .categoriesBox {
-    width: 83.3%;
+    display: contents;
     .mainCategory {
       .maca {
-        min-width: 10vw;
+        min-width: 13vw;
         .subca {
           display: flex;
           width: 100%;
@@ -65,7 +167,6 @@
       }
     }
   }
-
   .mainCategoriesBox {
     background-color: lightblue;
     display: inline-block;
@@ -75,22 +176,19 @@
       margin-bottom: 5px;
     }
   }
-
   .mask {
     overflow-y: hidden;
     animation: mask-slide 2s;
     animation-fill-mode: forwards;
   }
-
   .flex {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: baseline;
     // width: 100%;
     // padding: 0 30px;
   }
 }
-
 @keyframes fade-in {
   0% {
     opacity: 0.2;
@@ -99,7 +197,6 @@
     opacity: 1;
   }
 }
-
 @keyframes mask-slide {
   0% {
     height: 100px;

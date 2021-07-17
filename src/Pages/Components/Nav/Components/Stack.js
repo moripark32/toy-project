@@ -6,8 +6,13 @@ import '../Components/Stack.scss';
 const Stack = () => {
   return (
     <div className="stack">
-      <FontAwesomeIcon icon={faSearch} />
-      <a className="loginSignup">회원가입/로그인</a>
+      <div>
+        <a>
+          <FontAwesomeIcon icon={faSearch} />
+        </a>
+        <a className="loginSignup">회원가입/로그인</a>
+      </div>
+
       <div className="service">기업서비스</div>
     </div>
   );
