@@ -8,10 +8,37 @@
 @media (min-width: 768px) {
   .stack {
     border: 1px solid blue;
+    white-space: nowrap;
+    font-size: calc(0.2vw + 0.7vh + 1vmin);
+    .searchIconDown {
+      display: none;
+    }
   }
 }
 @media (max-width: 767px) {
   .stack {
     border: 1px solid orange;
+    margin: 6px;
+    white-space: nowrap;
+    width: 100%;
+    min-width: 70%;
+    //height: 40px;
+    height: 80%;
+    .position {
+      display: flex;
+      flex-direction: column;
+    }
+    .iconContainer {
+      display: flex;
+      justify-content: space-around;
+    }
+    .searchIconUp,
+    .login,
+    .service {
+      display: none;
+    }
+    .signup {
+      padding-bottom: 15px;
+    }
   }
 }

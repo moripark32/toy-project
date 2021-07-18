@@ -7,15 +7,15 @@ import Categories from './Components/Categories';
 
 const Nav = () => {
   // const [isHovered, setIsHovered] = useState(false); //바꿈
-  const [isHovered, setIsHovered] = useState(false); //바꿈
+  const [isHovered, setIsHovered] = useState(true); //바꿈
   console.log({ setIsHovered });
 
   const openHover = () => {
-    setIsHovered(true);
+    //setIsHovered(true);
   };
 
   const closeHover = () => {
-    setIsHovered(false);
+    //setIsHovered(false);
   };
 
   return (

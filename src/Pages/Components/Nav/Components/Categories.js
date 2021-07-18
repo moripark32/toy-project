@@ -35,7 +35,7 @@ const Categories = props => {
                 <ul className="flex">
                   <li className="maca">
                     <div className="inbet">
-                      {main.category}{' '}
+                      {main.category}
                       <span>
                         <FontAwesomeIcon icon={faChevronRight} />
                       </span>
