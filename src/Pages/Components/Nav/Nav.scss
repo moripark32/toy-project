@@ -32,7 +32,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 450px) and (max-width: 767px) {
   .navigation {
     .nav-i {
       display: flex;
@@ -51,15 +51,15 @@
 }
 
 .navigation {
-  border: 1px solid black;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 5%);
+  z-index: 100;
+  background-color: #fff;
 
   .logo {
-    border: 1px solid green;
     margin: 6px 0;
     img {
       width: 150px;
       display: block;
-      border: 1px solid blue;
     }
   }
 

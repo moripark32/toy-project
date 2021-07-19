@@ -4,7 +4,6 @@
     align-items: center;
     list-style: none;
     white-space: nowrap;
-    border: 1px solid red;
     margin: 0 auto;
     padding: 0;
 
@@ -14,6 +13,8 @@
 
     li {
       cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
       &:hover {
         border-bottom: 1px solid blue;
       }

@@ -12,7 +12,7 @@ const Stack = () => {
       <div className="position">
         <a className="signup">회원가입</a>
         <a className="login">/로그인</a>
-        <div className="iconContainer">
+        <div className="iconBox">
           <a className="searchIconDown">
             <FontAwesomeIcon icon={faSearch} />
           </a>

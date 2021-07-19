@@ -4,23 +4,6 @@ import React from 'react';
 
 import '../Components/DropBar.scss';
 const DropBar = props => {
-  // const [isHovered, setIsHovered] = useState(false); //바꿈
-  // const [isHovered, setIsHovered] = useState(true); //바꿈
-  // console.log({ setIsHovered });
-
-  // const handleHover = () => {
-  //   setIsHovered(!isHovered);
-  //   console.log(isHovered);
-  // };
-
-  // const openHover = () => {
-  //   // setIsHovered(true);
-  // };
-
-  // const closeHover = () => {
-  //   // setIsHovered(false);
-  // };
-
   const { openHover, closeHover } = props;
 
   return (
@@ -50,9 +33,6 @@ const DropBar = props => {
           </li>
         </ul>
       </div>
-      {/* {isHovered && (
-        <Categories isHovered={isHovered} closeHover={closeHover} />
-      )} */}
     </>
   );
 };

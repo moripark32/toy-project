@@ -1,6 +1,7 @@
 @media (max-width: 767px) {
   .categories {
     display: none;
+    font-size: 10px;
   }
 }
 .categories {
@@ -12,28 +13,21 @@
       margin: 0 auto;
       padding: 0;
     }
-    .maca {
-      border: 1px solid red;
+    .mainListBox {
       list-style: none;
-      .inbet {
+      .mainList {
         display: flex;
         justify-content: space-between;
       }
     }
-    .masubca {
-      border: 1px solid blue;
-    }
-    .subca {
-      border: 1px solid green;
-    }
   }
   .categoriesBox {
     display: contents;
-    //flex: 5;
+
     .mainCategory {
-      .maca {
+      .mainListBox {
         min-width: 13vw;
-        .subca {
+        .mainList {
           display: flex;
           width: 100%;
           white-space: nowrap;
@@ -44,45 +38,23 @@
     }
   }
   .mainCategoriesBox {
-    flex: 1;
     padding: 20px;
 
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    // white-space: nowrap;
-    // overflow: hidden;
-    // text-overflow: ellipsis;
-    // width: 250px;
-    //position: relative;
-    // width: 120px;
-    // display: block;
-    // float: left;
-    // overflow: hidden;
-    // text-overflow: ellipsis;
-    //display: -webkit-box;
-    //-webkit-line-clamp: 1; /* 라인수 */
-    //-webkit-box-orient: vertical;
-    //word-wrap: break-word;
-    //background-color: lightblue;
-    //display: flex;
-    //flex-direction: column;
-    //width: auto;
-    //text-overflow: ellipsis;
-    //flex: 1;
-
-    // display: flex;
-    // font-size: clamp(10px, 25vw, 18px);
-    // flex-direction: column;
-    // white-space: nowrap;
-    //min-width: 20%;
-    //lex-shrink: 1;
-    //text-overflow: ellipsis;
 
     .mainTitle {
       margin-bottom: 5px;
       display: flex;
       justify-content: space-between;
+      font-weight: 900;
+      div {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        min-width: 70px;
+      }
     }
   }
   .mask {

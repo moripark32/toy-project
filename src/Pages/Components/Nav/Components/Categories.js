@@ -33,21 +33,17 @@ const Categories = props => {
             return (
               <div key={main.id} className="mainCategory">
                 <ul className="flex">
-                  <li className="maca">
-                    <div className="inbet">
+                  <li className="mainListBox">
+                    <div className="mainList">
                       {main.category}
                       <span>
                         <FontAwesomeIcon icon={faChevronRight} />
                       </span>
                     </div>
-                    <div className="masubca">
+                    <div>
                       {main.sub_category &&
                         main.sub_category.map(sub => {
-                          return (
-                            <div className="subca" key={sub.id}>
-                              {sub.name}
-                            </div>
-                          );
+                          return <div key={sub.id}>{sub.name}</div>;
                         })}
                     </div>
                   </li>
