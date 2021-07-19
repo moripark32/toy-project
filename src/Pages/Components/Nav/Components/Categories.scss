@@ -17,6 +17,7 @@
       list-style: none;
       .mainList {
         display: flex;
+        font-weight: 900;
         justify-content: space-between;
       }
     }
@@ -27,12 +28,18 @@
     .mainCategory {
       .mainListBox {
         min-width: 13vw;
+
+        div {
+          margin-top: 5px;
+          white-space: nowrap;
+        }
         .mainList {
           display: flex;
           width: 100%;
           white-space: nowrap;
           text-overflow: ellipsis;
           overflow: hidden;
+          margin-bottom: 10px;
         }
       }
     }
@@ -49,6 +56,9 @@
       display: flex;
       justify-content: space-between;
       font-weight: 900;
+      span {
+        margin-left: 5px;
+      }
       div {
         overflow: hidden;
         white-space: nowrap;

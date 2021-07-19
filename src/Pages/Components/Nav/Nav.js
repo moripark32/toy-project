@@ -18,7 +18,7 @@ const Nav = () => {
   };
 
   return (
-    <div className="navigation">
+    <div className="navigation font-link">
       <div className="nav-i">
         <div className="nav-i-a">
           <div className="logo">
