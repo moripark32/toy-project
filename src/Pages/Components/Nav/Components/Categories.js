@@ -60,7 +60,10 @@ const Categories = props => {
           {mainCategories.map(main => {
             return (
               <div key={main.id} className="mainTitle">
-                {main.category}
+                <div>{main.category}</div>
+                <span>
+                  <FontAwesomeIcon icon={faChevronRight} />
+                </span>
               </div>
             );
           })}

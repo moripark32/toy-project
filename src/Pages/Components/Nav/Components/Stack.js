@@ -20,15 +20,7 @@ const Stack = () => {
             <FontAwesomeIcon icon={faList} />
           </a>
         </div>
-        {/* <a className="searchIconDown">
-          <FontAwesomeIcon icon={faSearch} />
-        </a>
-        <a className="searchIconDown">
-          <FontAwesomeIcon icon={faList} />
-        </a> */}
       </div>
-      {/* <a className="loginSignup">회원가입</a>
-      <a className="loginSignup">/로그인</a> */}
 
       <div className="service">기업서비스</div>
     </div>
