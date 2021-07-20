@@ -1,6 +1,4 @@
-// import React, { useState } from 'react';
 import React from 'react';
-// import Categories from './Categories';
 
 import '../Components/DropBar.scss';
 const DropBar = props => {
